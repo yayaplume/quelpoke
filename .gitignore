@@ -1,0 +1,10 @@
+# Binaire
+main
+quelpoke
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Var d'env
+.env
