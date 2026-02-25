@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quelpoke  # Nom du déploiement
+spec:
+  replicas: 1     # 1 seul pod
+  selector:
+    matchLabels:
+      app: quelpoke
+  template:
+    metadata:
+      labels:
+        app: quelpoke  # Label qui relie le pod au service
+    spec:
+      containers:
+      - name: quelpoke
+        image: europe-west9-docker.pkg.dev/cs-poc-hpzdycpiqjyvinhrczvlwcn/student-alexandra/quelpoke:latest     # Image buildée et poussée sur GCR
+        ports:
+          - containerPort: 8080 # Port de l'app

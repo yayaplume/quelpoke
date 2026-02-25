@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: quelpoke-service
+spec:
+  type: LoadBalancer  # IP publique auto via GCP
+  selector:
+    app: quelpoke    
+  ports:
+  - port: 80        
+    targetPort: 8080  # Redirige vers le port container

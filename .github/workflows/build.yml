@@ -25,3 +25,4 @@ jobs:
           context: .        
           push: true        # push image vers dockerhub
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/quelpoke:latest
+          
