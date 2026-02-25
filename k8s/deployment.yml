@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: quelpoke
-        image: europe-west9-docker.pkg.dev/cs-poc-hpzdycpiqjyvinhrczvlwcn/student-alexandra/quelpoke:latest     # Image buildée et poussée sur GCR
+        image: europe-west9-docker.pkg.dev/cs-poc-hpzdycpiqjyvinhrczvlwcn/student-alexandra/quelpoke:latest     # Image buildée et poussée sur Gcloud
         ports:
           - containerPort: 8080 # Port de l'app
